@@ -1,6 +1,4 @@
-<script>
-    function load() {
-        console.log("load event detected!");
-    }
-    window.onload = load;
-</script>
+function load() {
+    console.log("A suh dude!");
+}
+window.onload = load;
