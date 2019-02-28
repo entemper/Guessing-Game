@@ -15,7 +15,7 @@ function load() {
     var remainingGuessParagraph = document.querySelector('#remainingGuessParagraph');
 
     var randomNumber = Math.floor(Math.random() * (+100 - +1)) + +1;
-    // console.log("The correct guess will be " + randomNumber + ".");
+    console.log("The correct guess will be " + randomNumber + ".");
 
     function guessChecker() {
         
@@ -34,6 +34,7 @@ function load() {
             result.innerHTML = "Yes! You Win! Reload to play again!";
             submitButton.parentNode.removeChild(submitButton);
             guessInput.parentNode.removeChild(guessInput);
+            remainingGuessParagraph.parentNode.removeChild(remainingGuessParagraph);
         } else if(guess < randomNumber + 2 && guess > randomNumber - 2 ) {
             emoji.innerHTML = "😃";
             result.innerHTML = guess + "? Spicy! You're so close! Try again!";
@@ -48,7 +49,7 @@ function load() {
             result.innerHTML = guess + "? Cold. Try again!";
         } else if(guess < randomNumber + 50 && guess > randomNumber - 50 ) {
             emoji.innerHTML = "😖";
-            result.innerHTML = guess + "? Freezing. Try again!";
+            result.innerHTML = guess + "?\ Freezing. Try again!";
         } else {
             emoji.innerHTML = "🤬";
             result.innerHTML = guess + "? Way off. Try again!";
