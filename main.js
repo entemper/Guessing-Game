@@ -14,7 +14,7 @@ function load() {
     var result = document.querySelector('#result');
     var remainingGuessParagraph = document.querySelector('#remainingGuessParagraph');
 
-    var randomNumber = Math.floor(Math.random() * (+100 - +1)) + +1;
+    var randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
     // console.log("The correct guess will be " + randomNumber + ".");
 
     function guessChecker() {
