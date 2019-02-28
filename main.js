@@ -49,7 +49,7 @@ function load() {
             result.innerHTML = guess + "? Cold. Try again!";
         } else if(guess < randomNumber + 50 && guess > randomNumber - 50 ) {
             emoji.innerHTML = "😖";
-            result.innerHTML = guess + "?\ Freezing. Try again!";
+            result.innerHTML = guess + "? Freezing. Try again!";
         } else {
             emoji.innerHTML = "🤬";
             result.innerHTML = guess + "? Way off. Try again!";
