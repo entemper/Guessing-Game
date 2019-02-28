@@ -19,7 +19,7 @@ function load() {
 
     function guessChecker() {
         
-        var guess = guessInput.value;
+        var guess = Math.round(guessInput.value);
 
         guessInput.value = "";
 
