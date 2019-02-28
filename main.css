@@ -20,9 +20,18 @@ html, body {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-size: 120px;
+    text-align: center;
+    color: #ffc107;
+    margin: 0;
+    display: block;
+}
+
+h2 {
+    font-family: 'Eczar', serif;
     font-size: 72px;
+    line-height: 1.2em;
+    font-weight: 800;
     text-align: center;
     color: #ffc107;
     margin: 0 auto 40px;
@@ -40,18 +49,32 @@ input[type=text] {
     background-color: transparent;
     border: 2px solid #9C27B0;
     border-radius: 5px;
+    font-family: 'Work Sans', serif;
+    font-size: 64px;
+    text-align: center;
+    color: white;
 }
 
-input[type=button] {
+button {
     background-color: #ffc107;
     border: none;
     color: #9C27B0;
     padding: 16px 32px;
+    margin: auto;
+    display: block;
+    min-height: 60px;
+    display: block;
     text-decoration: none;
     cursor: pointer;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Work Sans', serif;
     font-size: 32px;
     text-align: center;
     border-radius: 80px;
+}
+
+p {
+    color: #ffc107;
+    font-size: 32px;
+    font-family: 'Work Sans', serif;
+    text-align: center;
 }
