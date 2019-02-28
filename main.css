@@ -47,7 +47,7 @@ input {
 
 input[type=text] {
     background-color: transparent;
-    border: 2px solid #9C27B0;
+    border: 3px solid #9C27B0;
     border-radius: 5px;
     font-family: 'Work Sans', serif;
     font-size: 64px;
@@ -55,9 +55,13 @@ input[type=text] {
     color: white;
 }
 
+input[type=text]:focus {
+    border: 3px solid #ffffff;
+}
+
 button {
     background-color: #ffc107;
-    border: none;
+    border: 3px solid transparent;
     color: #9C27B0;
     padding: 16px 32px;
     margin: auto;
@@ -70,6 +74,12 @@ button {
     font-size: 32px;
     text-align: center;
     border-radius: 80px;
+}
+
+button:hover {
+    background-color: #ffc107;
+    border: 3px solid #ffffff;
+    color-adjust: 
 }
 
 p {
